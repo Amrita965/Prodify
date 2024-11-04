@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+</head>
+<body>
+    
+    <header class="fixed top-0 left-0 z-[1000] w-full">
+        <nav class="bg-white shadow-xl px-5 py-4">
+            <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+                <div>
+                    <a class="text-3xl font-bold" href="/">Prodify<span class="text-[#ee0979]">.</span></a>
+                </div>
+                <ul class="font-medium flex items-center gap-10">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/company">Company</a></li>
+                    <li><a href="/services">Service</a></li>
+                    <li><a href="/testimonials">Testimonials</a></li>
+                    <li><a href="/login" class="btn btn-neutral rounded-xl bg-gradient-to-r from-[#ee0979] to-[#ff6a00] border-none text-white">START SALE</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-[80px]">
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="bg-black text-white p-10">
+        <div class="max-w-screen-xl mx-auto footer">
+            <aside>
+                <div>
+                    <a class="text-3xl font-bold" href="">Prodify<span class="text-[#ee0979]">.</span></a>
+                </div>
+              <p>
+                ACME Industries Ltd.
+                <br />
+                Providing reliable tech since 1992
+              </p>
+            </aside>
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

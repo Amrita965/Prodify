@@ -1,0 +1,58 @@
+
+{% extends "Shared/base.html" %}
+{% load static %}
+{% block title %}
+Home
+{% endblock title %}
+{% block content %}
+<section class="bg-gradient-to-r from-[#461096] to-[#7F3CE0]">
+    <div class="flex items-center py-48 max-w-screen-xl mx-auto">
+     <div class="basis-[60%] flex flex-col gap-5">
+         <h2 class="text-[43px] font-bold text-white leading-normal">Elevate Your Sales Game with Our Powerful POS Application!</h2>
+         <p class="text-xl text-gray-200">Discover streamlined transactions, real-time inventory management, and actionable insights in one intuitive POS app.</p>
+         <div class="flex gap-3">
+             <a href="#" class="btn btn-neutral bg-gradient-to-r from-[#ee0979] to-[#ff6a00] border-none text-white rounded-xl">START SALE</a>
+             <a href="#" class="btn btn-neutral bg-gradient-to-r from-[#ee0979] to-[#ff6a00] border-none text-white rounded-xl">LOGIN</a>
+         </div>
+     </div>
+     <div class="grow">
+         <img src={% static "Home/images/banner-img.png" %} alt="">
+     </div>
+</div>
+     
+ </section>
+ 
+ <section class="card card-side max-w-screen-xl mx-auto my-24 items-center gap-32">
+     <figure class="basis-[55%]">
+       <img
+         src={% static "Home/images/marketer.png" %}
+         alt="Movie" />
+     </figure>
+     <div class="card-body basis-[45%]">
+       <h1 class="text-4xl font-medium mb-8 leading-normal">Streamlined Solutions for On-Demand Services</h1>
+       <div class="flex flex-col gap-6">
+         <div class="flex items-start gap-5">
+             <img class="w-8" src={% static "Home/images/curved-arrow-right-blue-icon.png" %} alt="">
+             <div>
+                 <h3 class="font-medium text-xl mb-2">Effortless Service Management</h3>
+                 <p class="text-gray-700">Manage all services, bookings, and clients in one easy-to-use platform, boosting efficiency and focus.</p>
+             </div>
+         </div>
+         <div class="flex items-start gap-5">
+             <img class="w-8" src={% static "Home/images/curved-arrow-right-green-icon.png" %} alt="">
+             <div>
+                 <h3 class="font-medium text-xl mb-2">Fast, Secure Payments</h3>
+                 <p class="text-gray-700">Enjoy quick, safe transactions with built-in invoicing and automated confirmations.</p>
+             </div>
+         </div>
+         <div class="flex items-start gap-5">
+             <img class="w-8" src={% static "Home/images/curved-arrow-right-red-icon.png" %} alt="">
+             <div>
+                 <h3 class="font-medium text-xl mb-2">Powerful Analytics</h3>
+                 <p class="text-gray-700">Gain insights on performance and trends to help drive smart growth decisions.</p>
+             </div>
+         </div>
+       </div>
+     </div>
+ </section>
+{% endblock content %}
